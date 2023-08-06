@@ -43,4 +43,4 @@ node {
 	//   def app = docker.build("lamtranvinh/demovinh:${commit_id}", '.').push()
 	// }
  //     }	
-}
+// }
