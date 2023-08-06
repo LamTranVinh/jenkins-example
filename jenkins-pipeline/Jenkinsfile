@@ -1,6 +1,7 @@
 node {
-    git url: 'https://github.com/LamTranVinh/jenkins-example.git'
-    sh 'make all'
+    // git url: 'https://github.com/LamTranVinh/jenkins-example.git'
+    // sh 'make all'
+    sh 'ls -ltra'
 }
 
 
