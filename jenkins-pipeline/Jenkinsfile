@@ -5,7 +5,7 @@ node {
             git branch: 'master',
                 credentialsId: 'github',
                 url: 'https://github.com/LamTranVinh/jenkins-example.git'
-            sh "ls -lrat"
+            sh "ls -lrt"
         }
     }
 
