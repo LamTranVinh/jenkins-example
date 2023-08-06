@@ -1,5 +1,5 @@
 node {
-    def commit_it
+    // def commit_it
     stage('Checkout external proj') {
     sh 'ls -ltra'
     }
