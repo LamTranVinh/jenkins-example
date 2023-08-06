@@ -1,24 +1,19 @@
-node {
-    // git url: 'https://github.com/LamTranVinh/jenkins-example.git'
-    // sh 'make all'
-    sh 'ls -ltra'
-}
+// node {
+	
+//     // git url: 'https://github.com/LamTranVinh/jenkins-example.git'
+//     // sh 'make all'
+//     sh 'ls -ltra'
 
-
-
-
-
-
-// node {      
-//     // def commit_it
-//     stage('Checkout external proj') {
-//         steps {
-//             // git branch: 'master',
-//             //     credentialsId: 'github',
-//             //     url: 'https://github.com/LamTranVinh/jenkins-example.git'
-//             // sh "ls -lrt"
-//         }
-//     }
+node {      
+    def commit_it
+    stage('Checkout external proj') {
+        steps {
+            // git branch: 'master',
+            //     credentialsId: 'github',
+            //     url: 'https://github.com/LamTranVinh/jenkins-example.git'
+            sh "ls -lrt"
+        }
+    }
 
  //    stage('test') {
 	// def myTestContainer = doceker.image('node:4.6')
@@ -44,4 +39,4 @@ node {
 	//   def app = docker.build("lamtranvinh/demovinh:${commit_id}", '.').push()
 	// }
  //     }	
-// }
+ }
