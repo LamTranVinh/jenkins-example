@@ -9,4 +9,4 @@ rm -rf /tmp/download && \
 groupadd -g 999 docker && \ 
 usermod -aG docker jenkins
 
-User jenkins
+user jenkins
