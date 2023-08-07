@@ -15,7 +15,7 @@ pipeline {
         stage('Build') { 
             steps { 
                 script{
-                 app = docker.build("nginx")
+                 app = docker.build("underwater")
                 }
             }
         }
