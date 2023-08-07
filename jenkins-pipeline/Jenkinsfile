@@ -1,7 +1,7 @@
 node {
     def commit_it
     stage('Checkout external proj') {
-    sh 'ls -ltr'
+    sh 'ls -ltra'
     }
 
  //    stage('test') {
