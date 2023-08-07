@@ -1,27 +1,11 @@
-node {
-    agent any
-    options {
-        skipStagesAfterUnstable()
+node {  
+    stage('Build') { 
+        // 
     }
-    
-    stages {
-        def commit_id
-        stage('Clone repository github') { 
-            steps { 
-                script{
-                checkout scm
-                sh "git rev-parse --short HEAD > .git/commit-id"
-                commit_it = reaFile('.git/commit-id').trim()
-                }
-            }
-        }
-        // stage('Docker Build') {
-    	   //  agent any
-        //       steps {
-      	 //        sh 'docker build -t jenkins-pipeline/Dockerfile:latest .'
-        //         }
-        //     }      
-        }
+    stage('Test') { 
+        // 
     }
-
-
+    stage('Deploy') { 
+        // 
+    }
+}
