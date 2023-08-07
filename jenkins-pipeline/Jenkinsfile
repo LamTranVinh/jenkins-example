@@ -3,8 +3,8 @@ pipeline {
     options {
         skipStagesAfterUnstable()
     }
+    def commit_id
     stages {
-         def commit_id
          stage('Clone repository github') { 
             steps { 
                 script{
