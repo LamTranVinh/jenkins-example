@@ -1,9 +1,7 @@
 version: '2'
 services:
   jenkins:
-    image: jenkins/docker
-    build:
-      context: jenkins
+    image: jenkins:sock
     ports:
       - "8080:8080"
       - "50000:50000"
