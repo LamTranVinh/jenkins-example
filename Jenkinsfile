@@ -12,13 +12,14 @@ pipeline {
             }
         }
 
-        stage('Build') { 
-            steps { 
-                script{
-                 app = docker.build("underwater")
-                }
+    agent { docker { image 'node:18.17.0-alpine3.18' } }
+    stages {
+        stage('build') {
+            steps {
+                sh 'node --version'
             }
         }
+    }
         stage('Test'){
             steps {
                  echo 'Empty'
