@@ -1,11 +1,12 @@
-pipeline {
+node {
     agent any
     options {
         skipStagesAfterUnstable()
     }
-    def commit_id
+    
     stages {
-         stage('Clone repository github') { 
+        def commit_id
+        stage('Clone repository github') { 
             steps { 
                 script{
                 checkout scm
