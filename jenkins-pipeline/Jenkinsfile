@@ -1,6 +1,6 @@
 node {  
      def commit_id
-     stage('Checkout') { 
+     stage('Checkout repo') { 
          checkout scm
     }
     stage('Build') { 
